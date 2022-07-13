@@ -4,4 +4,4 @@ dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
-table.delete()
+table.delete() 

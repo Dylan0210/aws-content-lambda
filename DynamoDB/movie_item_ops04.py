@@ -36,4 +36,4 @@ response = table.update_item(
 )
 
 print("UpdateItem succeeded:")
-print(json.dumps(response, indent=4, cls=DecimalEncoder))
+print(json.dumps(response, indent=4, cls=DecimalEncoder)) 

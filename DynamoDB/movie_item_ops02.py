@@ -37,4 +37,4 @@ except ClientError as e:
 else:
     item = response['Item']
     print("GetItem succeeded:")
-    print(json.dumps(item, indent=4, cls=DecimalEncoder))
+    print(json.dumps(item, indent=4, cls=DecimalEncoder)) 

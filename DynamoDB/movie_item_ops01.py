@@ -35,4 +35,4 @@ response = table.put_item(
 )
 
 print("PutItem succeeded:")
-print(json.dumps(response, indent=4, cls=DecimalEncoder))
+print(json.dumps(response, indent=4, cls=DecimalEncoder)) 

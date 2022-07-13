@@ -60,4 +60,4 @@ sudo pip-3.6 install boto3
 
 ### Delete the Table
 
-`python3 MoviesDeleteTable.py`
+`python3 MoviesDeleteTable.py` 
