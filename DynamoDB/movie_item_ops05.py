@@ -47,4 +47,4 @@ except ClientError as e:
         raise
 else:
     print("UpdateItem succeeded:")
-    print(json.dumps(response, indent=4, cls=DecimalEncoder))
+    print(json.dumps(response, indent=4, cls=DecimalEncoder)) 

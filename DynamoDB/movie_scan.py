@@ -45,4 +45,4 @@ while 'LastEvaluatedKey' in response:
     )
 
     for i in response['Items']:
-        print(json.dumps(i, cls=DecimalEncoder))
+        print(json.dumps(i, cls=DecimalEncoder)) 

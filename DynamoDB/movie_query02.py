@@ -29,4 +29,4 @@ response = table.query(
 )
 
 for i in response[u'Items']:
-    print(json.dumps(i, cls=DecimalEncoder))
+    print(json.dumps(i, cls=DecimalEncoder)) 

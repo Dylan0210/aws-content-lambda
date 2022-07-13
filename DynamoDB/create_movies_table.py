@@ -36,4 +36,4 @@ print('Table status:', table.table_status)
 
 print('Waiting for', table.name, 'to complete creating...')
 table.meta.client.get_waiter('table_exists').wait(TableName='Movies')
-print('Table status:', dynamodb.Table('Movies').table_status)
+print('Table status:', dynamodb.Table('Movies').table_status) 

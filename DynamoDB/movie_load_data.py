@@ -22,4 +22,4 @@ with open("moviedata.json") as json_file:
                 'title': title,
                 'info': info,
             }
-        )
+        ) 

@@ -28,4 +28,4 @@ response = table.query(
 )
 
 for i in response['Items']:
-    print(i['year'], ":", i['title'])
+    print(i['year'], ":", i['title']) 
