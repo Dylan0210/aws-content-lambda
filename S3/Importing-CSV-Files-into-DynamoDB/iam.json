@@ -24,4 +24,4 @@
       "Resource": "arn:aws:dynamodb:__YOURREGION__:__YOURACCOUNTID__:table/Movies"
     }
   ]
-}
+} 

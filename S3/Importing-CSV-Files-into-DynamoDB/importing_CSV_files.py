@@ -44,4 +44,4 @@ def read_csv(file):
             data['Meta'] = {k: v for k,
                             v in data['Meta'].items() if v is not None}
             items.append(data)
-    return items
+    return items 
