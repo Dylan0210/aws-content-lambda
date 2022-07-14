@@ -8,8 +8,8 @@ By default, VPC Flow Logs are not enabled. However, in our scenario, let's say y
 In this lesson, we will automate the creation of VPC Flow Logs whenever a new VPC is created.
 
 - `vpc_flow_log_function.py` creates VPC Flow Logs for the VPC ID in the event
-- `event-pattern.json` is the CloudWatch Rule event pattern for monitoring the `CreateVpc` API call.
-- `test-event.json` is a sample CloudTrail event that can be used with the Lambda function, as it contains the VPC ID
+- `event_pattern.json` is the CloudWatch Rule event pattern for monitoring the `CreateVpc` API call.
+- `test_event.json` is a sample CloudTrail event that can be used with the Lambda function, as it contains the VPC ID
 
 ## Create IAM role with permission to log to CloudWatch Logs
 
