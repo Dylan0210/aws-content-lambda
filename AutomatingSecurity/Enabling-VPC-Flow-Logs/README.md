@@ -16,7 +16,7 @@ In this lesson, we will automate the creation of VPC Flow Logs whenever a new VP
 Allow the VPC Flow Logs service to assume this role:
 
 ```sh
-aws iam create-role --role-name VPCFlowLogsRole --assume-role-policy-document file://trust-policy.json
+aws iam create-role --role-name VPCFlowLogsRole --assume-role-policy-document file://trust_policy.json
 ```
 
 **Note the ARN for `VPCFlowLogsRole`.**
@@ -26,7 +26,7 @@ Example: `arn:aws:iam::123456789012:role/VPCFlowLogsRole`
 Grant this role permission to CloudWatch Logs:
 
 ```sh
-aws iam put-role-policy --role-name VPCFlowLogsRole --policy-name VPCFlowLogsPolicy --policy-document file://vpc-flow-logs-iam-role.json
+aws iam put-role-policy --role-name VPCFlowLogsRole --policy-name VPCFlowLogsPolicy --policy-document file://iam_role_vpc_flow_logs.json
 ```
 
 ## Create the Lambda Function
@@ -34,7 +34,7 @@ aws iam put-role-policy --role-name VPCFlowLogsRole --policy-name VPCFlowLogsPol
 Name: `EnableVPCFlowLogs`  
 Runtime: `Python 3.7`  
 Role: `Create a custom role` (use `lambda_execution_role.json`)  
-Code: `lambda_function.py`
+Code: `vpc_flow_log_function.py`
 
 ## Create a CloudWatch Event Rule to Trigger Lambda
 
