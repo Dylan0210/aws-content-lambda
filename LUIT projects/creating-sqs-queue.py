@@ -4,7 +4,7 @@ import boto3
 sqs = boto3.resource('sqs')
 
 # creating the queue
-queue = sqs.create_queue(QueueName= 'Time')
+queue = sqs.create_queue(QueueName='Time')
 
 # printing out the queue url
 print(queue.url)
